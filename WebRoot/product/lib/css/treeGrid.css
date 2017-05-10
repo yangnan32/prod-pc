@@ -1,0 +1,116 @@
+@charset "utf-8";
+/*================= sywGrid.css start ==============*/
+.uiframe-sywGrid{}
+.uiframe-grid-panel,.uiframe-TreeGrid-panel{overflow: hidden;}
+.uiframe-grid,.uiframe-TreeGrid{overflow: hidden;position:relative;width:100%;}
+.uiframe-grid-header td,.uiframe-grid-main td,.uiframe-treeGrid-main td{padding: 2px 0 2px 5px;height: 32px;}
+.uiframe-grid-header td div,.uiframe-grid-main td div{overflow:hidden;text-overflow: ellipsis; white-space: nowrap;}
+.uiframe-treeGrid-main td div{overflow:hidden;white-space: nowrap;}
+.uiframe-grid-footer{height:26px;line-height:26px; width: 100%;}
+.uiframe-grid-title span{ margin-left: 6px; font-size:14px;font-weight: bold;}
+.uiframe-grid-header td{height: 30px;_height:30px;}
+.uiframe-grid-main,.uiframe-treeGrid-main{overflow: auto;}
+.uiframe-grid-header td.uiframe-grid-checkbox, .uiframe-grid-main td.uiframe-grid-checkbox, .uiframe-treeGrid-main td.uiframe-grid-checkbox{cursor:pointer;padding: 0 0 0 3px;}
+.uiframe-grid-checkbox .uiframe-grid-checkBg{width:16px;height:18px;}
+.grid-nocheck .uiframe-grid-checkBg{width:16px;height:18px;}
+.grid-check .uiframe-grid-checkBg{width:16px;height:18px;}
+.gridMain{overflow-y:hidden;overflow-x: auto;}
+.uiframe-grid-header td.grid-headerBtnTd,.uiframe-grid-main td.grid-mainBtnTd,.uiframe-treeGrid-main td.grid-mainBtnTd{padding:0;}
+.uiframe-grid-header .grid-headerBtn,.uiframe-grid-main .grid-mainBtn,.uiframe-treeGrid-main .grid-mainBtn{padding:0;width:16px;height:18px;}
+.uiframe-grid-header td.grid-headerBtnTd-hover{cursor:pointer;}
+.uiframe-grid-header td.grid-headerBtnTd-click{cursor:pointer;}
+.uiframe-grid-footer-l td{line-height: 16px;}
+.uiframe-grid-first-page{ width: 19px;height:19px; cursor: pointer; }
+.uiframe-grid-prev-page{ width: 19px;height:19px; cursor: pointer; }
+.uiframe-grid-next-page{ width: 55px;height:19px; cursor: pointer; }
+.uiframe-grid-last-page{ width: 19px;height:19px; cursor: pointer;}
+.uiframe-grid-split{ height: 16px; width: 4px;}
+.uiframe-grid-refresh{ width: 16px; cursor: pointer;}
+.uiframe-grid-footer-pages{ width: 30px; text-align: right; line-height: 16px;margin:0 2px;}
+.uiframe-grid-toolSpan{ width: 6px;}
+#gridColumnMenu{position:absolute;padding:1px;word-wrap:break-word;word-break:normal;display:none;z-index: 9999;}
+.clickColumn{height:23px;line-height:23px;cursor:pointer;width:120px;text-overflow: ellipsis;overflow: hidden;}
+.clickColumn .columnMenuSpan{padding:0 8px 0 28px;}
+/*================= sywGrid.css end ==============*/
+/*================= sywTreeGrid.css start ==============*/
+.uiframe-treeLevel{width:16px;height:26px;position:absolute;cursor:pointer;}
+.uiframe-treeFolder,.uiframe-treeFolder{width:16px;height:16px;position:absolute;}
+.columnChangeCls{background:url("../images/treeImg/dirty.gif") left top no-repeat;}
+/*================= sywTreeGrid.css end ==============*/
+/*================= drag.css start ==============*/
+.uiframe-dragParent{position:relative;}
+.uiframe-drag{cursor: e-resize;height: 100%;right: 0;top: 0;width: 8px;position: absolute;z-index: 99999;}
+/*================= drag.css end ==============*/
+
+/* grid */
+.uiframe-grid-iconWidth{width:10px;}
+.x-btn-icon .x-btn-small .x-btn-text {height: 19px;width: 19px;}
+.x-btn-icon .x-btn-small .x-tbar-page-next {width:55px;}
+.x-btn-icon .x-btn-small .x-item-disabled .x-tbar-page-next {width:55px;}
+.x-grid-group-hd div.x-grid-group-title {width:100%;padding: 4px 4px 4px 17px;word-wrap:break-word;word-break:break-all;}
+/*.x-grid-with-col-lines .x-grid3-row td.x-grid3-td-checker {padding-left: 1px;padding-right: 1px;}*/
+/*.x-small-editor .x-form-num-field {width:28px;text-align: center;}*/
+/*.ext-strict .x-small-editor .uiframe-tbar-page-number{height:17px !important;}*/
+/*.x-small-editor .x-form-field-wrap .uiframe-tbar-page-img{width:14px;height:17px;position:absolute;top:5px;margin-top:0;float:none;}*/
+/*.x-toolbar-right-ct{margin-right: 13px;}*/
+/* editGridCombobox */
+.x-small-editor .x-form-field-wrap .x-form-trigger {height: 19px;}
+.x-form-field-wrap .editGridTrigger {cursor: pointer;float: none;height: 21px; margin-top: 0px;position: absolute;width: 21px;_top:0;}
+.ext-strict .x-small-editor .editGridCombox {height:19px !important;}
+.x-toolbar .x-toolbar-right-ct{margin-right: 10px;}
+/* ganttCombobox */
+.x-small-editor .x-form-field-wrap .x-form-trigger {height: 19px;}
+.x-form-field-wrap .ganttTrigger {cursor: pointer;float: none;height: 21px; margin-left:-1px;margin-top:6px;_margin-top:7px;position: absolute;width: 21px;_top:0;}
+.ext-strict .x-small-editor .ganttCombox {height:19px !important;}
+.x-toolbar .x-toolbar-right-ct{margin-right: 10px;}
+/* grid可复制样式 */
+.uiframe-gridRowScroll{width:100%;word-break:break-all;overflow-y:auto;overflow-x:hidden;word-wrap:break-word;white-space:normal;}
+.uiframe-TreeGrid table{width:100%;}
+
+/*================= sywGrid.css start ==============*/
+.uiframe-grid-panel,.uiframe-TreeGrid-panel{background: #ffffff;}
+.uiframe-grid-footer{background:#ffffff;border-top:1px solid #EDEDED;}
+.uiframe-grid-header{background:#f6f6f6;font-weight:bold;}
+
+.uiframe-grid-header td{color:#999999;}
+.uiframe-grid-main td{border:1px solid #EDEDED;border-top:1px solid #FFFFFF;}
+.uiframe-grid-main td.uiframe-grid-checkbox, .uiframe-treeGrid-main td.uiframe-grid-checkbox{}
+.uiframe-grid-main td.uiframe-grid-checkbox,.uiframe-treeGrid-main td.uiframe-grid-checkbox{}
+.grid-nocheck .uiframe-grid-checkBg{background:url(../images/treeImg/grid-check.gif) no-repeat 0 2px;}
+.grid-check .uiframe-grid-checkBg{background:url(../images/treeImg/grid-check.gif) no-repeat -25px 2px;}
+.uiframe-grid-header td.grid-headerBtnTd,.uiframe-grid-main td.grid-mainBtnTd,.uiframe-treeGrid-main td.grid-mainBtnTd{border:none;}
+.uiframe-grid-header td.grid-headerBtnTd{}
+.uiframe-grid-main td.grid-mainBtnTd,.uiframe-treeGrid-main td.grid-mainBtnTd{background:#ffffff;}
+.uiframe-grid-header td.grid-headerBtnTd-hover{background:url(../images/treeImg/grid-hd-btn.gif) left center no-repeat;}
+.uiframe-grid-header td.grid-headerBtnTd-click{background:url(../images/treeImg/grid-hd-btn.gif) left center no-repeat;}
+/*.uiframe-grid-tr-odd{ background: #ffffff;}*/
+/*.uiframe-grid-tr-even{ background: #fafafa;}*/
+.uiframe-grid-main .gridTrSelect .uiframe-grid-checkbox{background:url(../images/treeImg/row-sel.png) repeat left bottom;}
+.uiframe-grid-first-page{ background:url(../images/treeImg/page-first.png) center no-repeat; border: none;}
+.uiframe-grid-first-page-disabled{ background:url(../images/treeImg/page-first-disabled.png) center no-repeat; }
+.uiframe-grid-prev-page{ background:url(../images/treeImg/page-prev.png) center no-repeat; border: none;}
+.uiframe-grid-prev-page-disabled{ background:url(../images/treeImg/page-prev-disabled.png) center no-repeat; }
+.uiframe-grid-next-page{ background:url(../images/treeImg/page-next.png) center no-repeat; border: none; }
+.uiframe-grid-next-page-disabled{ background:url(../images/treeImg/page-next-disabled.png) center no-repeat; }
+.uiframe-grid-last-page{ background:url(../images/treeImg/page-last.png) center no-repeat; border: none;}
+.uiframe-grid-last-page-disabled{ background:url(../images/treeImg/page-last-disabled.png) center no-repeat; }
+.uiframe-grid-split{ background:url(../images/treeImg/grid-blue-split.gif) center no-repeat; }
+.uiframe-grid-refresh{ background:url(../images/treeImg/refresh.gif) center no-repeat; border: none;}
+.uiframe-grid-footer-pages{ border: 1px solid #AEB5C1;color: #3D3D3D;}
+#gridColumnMenu{border:1px solid #D0D0D0;background:url(../images/treeImg/m-bg.png) repeat-y left top #ffffff;color:#333;}
+.clickColumn .columnMenuSpan{background:url("../images/treeImg/select_checkbox_no.png") 4px center no-repeat;}
+.selectColumn .columnMenuSpan{background:url("../images/treeImg/select_checkbox.png") 5px center no-repeat;}
+/*================= sywGrid.css end ==============*/
+/*================= sywTreeGrid.css start ==============*/
+.uiframe-treeNode-collapse .uiframe-treeLevelIcon{background:url("../images/treeImg/elbow-end-plus-nl.gif") center no-repeat;}
+.uiframe-treeNode-collapse .uiframe-treeFolderIcon{background:url("../images/treeImg/folder.gif") center no-repeat;}
+.uiframe-treeNode-collapse .uiframe-treeWaitIcon{background:url("../images/treeImg/wait.gif") center no-repeat;}
+.uiframe-treeNode-expand .uiframe-treeLevelIcon{background:url("../images/treeImg/elbow-minus-nl.gif") center no-repeat;}
+.uiframe-treeNode-expand .uiframe-treeFolderIcon{background:url("../images/treeImg/folder-open.gif") center no-repeat;}
+.uiframe-treeNode-expand .uiframe-treeWaitIcon{background:url("../images/treeImg/wait.gif") center no-repeat;}
+.uiframe-treeNode-leaf .uiframe-treeLevelIcon{background:url("../images/treeImg/elbow.gif") center no-repeat;}
+.uiframe-treeNode-leaf .uiframe-treeFolderIcon{background:url("../images/treeImg/leaf.gif") center no-repeat;}
+.uiframe-treeNode-leaf .treeFolderIcon613{background:url("../images/treeImg/folder.gif") center no-repeat;}
+/*================= sywTreeGrid.css end ==============*/
+.gridTrHover{background:#f6fafd;}
+.gridTrSelect{background:#f6fafd;}
